@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="name" id="name">
+
+    <label for="" id="visible" style="visibility: hidden; color: red;" >Invalid Username</label>
+    <button onclick="click ()">Submit</button>
+    </form>
+
+
+
+
+
+    <script>
+        // regexmethod
+        function click (){
+            var text = document.getElementById("name");
+            var regex = /BBA/i;
+            if (regex.test(text)){
+                alert("Valid Username")
+            }
+            else{
+                alert("invalid username")
+                
+                    document.getElementById("visible").style.visibility = "visible";
+                
+            }
+        }
+        // prompt method
+        // let a=prompt("Enter time according to 24 hours");
+        // if (a >=5 && a <=12){
+        //     alert('Good Morning')
+        //     console.log('goodmorning');
+        //     // document.write(a);
+        //     // document.write(' ' + 'Good Morning');
+        // }
+        //  else if (a >=13 &&  a <=17 ){
+        //     alert('Good Afternoon')
+        //     console.log('goodafternoon');
+        //  }
+        //  else if(a >=19 && a <= 21){
+        //     alert('Good Evening')
+        //     console.log('goodevening');
+        //  }
+        //  else  (a >=22 && a == 24);{
+        //     alert('Good Night')
+        //     console.log('goodnight');
+        //  }
+    </script>
+</body>
+</html>
